@@ -19,10 +19,8 @@ public class r681 {
         for (int i = pieces.length - 2; i >= 0; i--) {
             int lastPiece = pieces[i + 1];
             if (lastPiece <= 1) break;
-            int parts = pieces[i];
-            if (pieces[i] >= lastPiece) parts = lastPiece - 1;
-            pieces[i] = parts;
-            sum += parts;
+            if (pieces[i] >= lastPiece) pieces[i] = lastPiece - 1;
+            sum += pieces[i];
         }
 
         System.out.println(sum);
