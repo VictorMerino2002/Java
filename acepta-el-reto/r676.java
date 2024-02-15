@@ -4,7 +4,6 @@ class PianoDays {
    int day28 = 0;
    int day29 = 0;
 
-
    public void checkDays(int year) {
        if ( (year%4 == 0 && year%100 !=0) || (year%400 == 0) ) this.day28++;
        else this.day29++;
